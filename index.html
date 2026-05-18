@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iqra - Master the Quran & Islamic Studies Online</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;600;900&display=swap"
+        rel="stylesheet">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">IQRA.</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#contact" class="btn btn-secondary" style="padding: 0.5rem 1rem; margin-left: 1rem;">Join
+                    Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content" style="z-index: 10; position: relative;">
+            <h1 id="hero-title">Elevate Your <br>Quranic Learning</h1>
+            <p id="hero-subtitle">Experience a modern, premium pathway to mastering the Quran and deeply understanding
+                Islamic teachings from the comfort of your home.</p>
+            <div class="hero-btns" id="hero-actions">
+                <a href="#courses" class="btn btn-secondary">Explore Courses</a>
+                <a href="#contact" class="btn btn-primary"
+                    style="background: transparent; border: 2px solid white; margin-left: 1.5rem;">Free Consultation</a>
+            </div>
+        </div>
+        <!-- Decorative abstract elements -->
+        <div class="floating-circle"
+            style="top: -10%; right: -5%; width: 500px; height: 500px; opacity: 0.2; background: var(--accent); border-radius: 50%;">
+        </div>
+        <div class="floating-circle"
+            style="bottom: -20%; left: -10%; width: 600px; height: 600px; opacity: 0.1; background: var(--primary-mid); border-radius: 50%;">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container text-center">
+            <h2 class="section-title">Our Vision</h2>
+            <p class="section-subtitle">At IQRA, we blend traditional wisdom with modern technology to provide an
+                unparalleled learning experience for students worldwide.</p>
+
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-top: 4rem;">
+                <div class="glass-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📖</div>
+                    <h3>Authentic Knowledge</h3>
+                    <p>Curriculum rooted in classical scholarly traditions, delivered for the contemporary mind.</p>
+                </div>
+                <div class="glass-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🤝</div>
+                    <h3>1-on-1 Mentorship</h3>
+                    <p>Direct access to scholars who guide you personally through every verse and concept.</p>
+                </div>
+                <div class="glass-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">⚡</div>
+                    <h3>Modern Access</h3>
+                    <p>State-of-the-art digital platform that makes learning seamless across all your devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-title">Enlightening Courses</h2>
+                <p class="section-subtitle">Select a path that resonates with your spiritual journey. We offer
+                    structured programs for all age groups and skill levels.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+                <div class="course-card glass-card">
+                    <span
+                        style="color: var(--secondary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Recitation</span>
+                    <h3>Quran Recitation (Nazra)</h3>
+                    <p>Master the correct pronunciation and flow of the Quranic text with professional guidance from
+                        Qaris.</p>
+                    <a href="#" style="color: var(--primary-mid); font-weight: 600;">View Details &rarr;</a>
+                </div>
+                <div class="course-card glass-card">
+                    <span
+                        style="color: var(--secondary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Rules</span>
+                    <h3>Tajweed Mastery</h3>
+                    <p>Deep dive into the complex rules of Tajweed to recite the words of Allah exactly as they were
+                        revealed.</p>
+                    <a href="#" style="color: var(--primary-mid); font-weight: 600;">View Details &rarr;</a>
+                </div>
+                <div class="course-card glass-card">
+                    <span
+                        style="color: var(--secondary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Knowledge</span>
+                    <h3>Islamic Studies</h3>
+                    <p>Comprehensive studies on Fiqh, Seerah, and Islamic history for a well-rounded spiritual
+                        foundation.</p>
+                    <a href="#" style="color: var(--primary-mid); font-weight: 600;">View Details &rarr;</a>
+                </div>
+                <div class="course-card glass-card">
+                    <span
+                        style="color: var(--secondary); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Devotion</span>
+                    <h3>Hifz (Memorization)</h3>
+                    <p>A structured program with memorization techniques to help you commit the Holy Quran to heart.</p>
+                    <a href="#" style="color: var(--primary-mid); font-weight: 600;">View Details &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="why">
+        <div class="container">
+            <div style="display: flex; align-items: center; gap: 6rem; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 350px;">
+                    <h2 class="section-title">Why Choose IQRA?</h2>
+                    <ul style="margin-top: 1rem;">
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: start;">
+                            <span
+                                style="background: var(--bg-soft); color: var(--secondary); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; font-weight: bold;">01</span>
+                            <div>
+                                <h4
+                                    style="font-family: var(--font-body); font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--dark);">
+                                    Tailored Learning Path</h4>
+                                <p style="font-size: 1rem;">We create a custom curriculum based on your current level
+                                    and goals.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: start;">
+                            <span
+                                style="background: var(--bg-soft); color: var(--secondary); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; font-weight: bold;">02</span>
+                            <div>
+                                <h4
+                                    style="font-family: var(--font-body); font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--dark);">
+                                    Global Scholar Access</h4>
+                                <p style="font-size: 1rem;">Connect with certified teachers from across the globe from
+                                    your own home.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: start;">
+                            <span
+                                style="background: var(--bg-soft); color: var(--secondary); width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 50%; flex-shrink: 0; font-weight: bold;">03</span>
+                            <div>
+                                <h4
+                                    style="font-family: var(--font-body); font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--dark);">
+                                    Interactive Tools</h4>
+                                <p style="font-size: 1rem;">Use our digital whiteboard and recording features to enhance
+                                    retention.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 350px;">
+                    <div
+                        style="width: 100%; height: 500px; background: url('https://images.unsplash.com/photo-1590059393160-5f2594a973f0?auto=format&fit=crop&q=80&w=1000') center/cover; border-radius: 30px; position: relative; box-shadow: 0 30px 60px rgba(0,0,0,0.1);">
+                        <div class="glass-card"
+                            style="position: absolute; bottom: -30px; left: -30px; max-width: 250px;">
+                            <p
+                                style="font-size: 0.9rem; font-style: italic; color: var(--primary-deep); line-height: 1.4;">
+                                "Excellence is not an act, but a habit. We build that habit in every student."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Voices of Our Students</h2>
+            <div id="testimonials-content"
+                style="margin-top: 2rem; padding: 3rem; background: rgba(255,255,255,0.05); border-radius: 30px; border: 1px solid rgba(255,255,255,0.1);">
+                <p style="font-size: 1.8rem; font-family: var(--font-heading); color: white; line-height: 1.6;">"IQRA
+                    has completely transformed my connection with the Quran. The 1-on-1 sessions are incredibly
+                    supportive, and my teacher's patience and knowledge have made all the difference in my Tajweed
+                    journey."</p>
+                <div style="margin-top: 2.5rem;">
+                    <h4 style="color: var(--accent); font-family: var(--font-body); font-size: 1.2rem;">Sarah J.</h4>
+                    <span style="opacity: 0.7; font-size: 0.9rem;">London, United Kingdom</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us (Contact) -->
+    <section id="contact" class="container">
+        <div style="text-align: center;">
+            <h2 class="section-title">Begin Your Journey</h2>
+            <p class="section-subtitle">Join thousands of students who have started their path to enlightenment with
+                IQRA. Sign up for a free trial lesson today.</p>
+        </div>
+
+        <div class="glass-card" style="max-width: 800px; margin: 0 auto;">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <!-- Web3Forms Access Key (Get yours for free at web3forms.com) -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="hidden" name="subject" value="New Trial Lesson Booking - IQRA">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="font-weight: 600; font-size: 0.9rem;">Full Name</label>
+                    <input type="text" name="name" placeholder="e.g. Abdullah Ahmad" required
+                        style="padding: 1.2rem; border-radius: 12px;">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                    <label style="font-weight: 600; font-size: 0.9rem;">Email Address</label>
+                    <input type="email" name="email" placeholder="e.g. abdullah@example.com" required
+                        style="padding: 1.2rem; border-radius: 12px;">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.5rem; grid-column: span 2;">
+                    <label style="font-weight: 600; font-size: 0.9rem;">Preferred Course</label>
+                    <select name="course" required style="padding: 1.2rem; border-radius: 12px;">
+                        <option value="">Select a course</option>
+                        <option value="Quran Recitation">Quran Recitation (Nazra)</option>
+                        <option value="Tajweed Mastery">Tajweed Mastery</option>
+                        <option value="Islamic Studies">Islamic Studies</option>
+                        <option value="Hifz Memorization">Hifz (Memorization)</option>
+                    </select>
+                </div>
+                <div style="grid-column: span 2; margin-top: 1rem;">
+                    <button type="submit" class="btn btn-secondary" style="width: 100%;">Request Trial Lesson</button>
+                    <p style="font-size: 0.8rem; text-align: center; margin-top: 1.5rem; opacity: 0.7;">No credit card
+                        required. Our team will contact you within 24 hours.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer style="padding: 2rem 5%; background: #eee; text-align: center;">
+        <p>&copy; 2026 IQRA Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
