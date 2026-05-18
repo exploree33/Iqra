@@ -255,6 +255,16 @@ nav.scrolled .nav-links a {
     margin-right: auto;
 }
 
+.hero-btns {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 10;
+}
+
 .floating-circle {
     position: absolute;
     filter: blur(60px);
@@ -272,8 +282,26 @@ section {
 }
 
 #courses {
-    background-color: #f1f5f9;
+    background: linear-gradient(135deg, #042F24 0%, #064E3B 100%);
     padding-bottom: 10rem;
+}
+
+#courses .section-title {
+    color: var(--accent);
+}
+
+#courses .section-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#courses .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#courses .glass-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 #why {
@@ -305,6 +333,22 @@ section {
     margin-bottom: 1.5rem;
 }
 
+#courses .course-card h3 {
+    color: var(--light);
+}
+
+#courses .course-card p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+#courses .course-card a {
+    color: var(--accent) !important;
+}
+
+#courses .course-card a:hover {
+    color: var(--secondary) !important;
+}
+
 /* Form Styles */
 input,
 select {
@@ -326,11 +370,11 @@ select:focus {
 /* --- Responsive --- */
 @media (max-width: 992px) {
     .hero h1 {
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
 
     .section-title {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 }
 
@@ -347,14 +391,73 @@ select:focus {
     /* Mobile Menu would go here */
     .hero h1 {
         font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
     }
 
     .hero {
         height: auto;
-        padding: 120px 5%;
+        padding: 140px 5% 100px;
     }
 
-    .section-padding {
-        padding: 5rem 5%;
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .hero-btns .btn {
+        width: 100%;
+        max-width: 320px;
+        text-align: center;
+    }
+
+    section {
+        padding: 5rem 5% !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .section-subtitle {
+        margin: -1.5rem auto 3rem;
+        font-size: 1.05rem;
+    }
+
+    #contact-form {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+
+    #contact-form div {
+        grid-column: span 2 !important;
+    }
+    
+    .glass-card {
+        padding: 1.5rem;
+    }
+
+    #why .glass-card {
+        bottom: 20px !important;
+        left: 20px !important;
+        right: 20px !important;
+        max-width: none !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-btns .btn {
+        padding: 1rem 2rem;
+        font-size: 0.85rem;
     }
 }
